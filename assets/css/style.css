@@ -70,6 +70,10 @@ input {
     margin: 10px 0 10px 0;
 }
 
+.email-error::placeholder {
+    color: #FF6649;
+}
+
 button {
     font-family: inherit;
     padding: 20px;
@@ -84,6 +88,20 @@ button {
 
 button:hover {
     background-color: hsl(4, 100%, 67%);
+    box-shadow: 0 10px 25px 0 hsl(4, 100%, 67%);
+}
+
+
+button:focus {
+    background-color: hsl(4, 86%, 56%);
+    box-shadow: 0 10px 25px 0 hsl(4, 86%, 56%);
+}
+
+#error {
+    display: block;
+    float: right;
+    color: tomato;
+    font-size: 14px;
 }
 
 .banner {
@@ -138,7 +156,6 @@ li {
 .prominent {
     font-weight: bold;
 }
-
 
 /** Media Queries for responsiveness **/
 /* Large devices (laptops/desktops, between 992px and 1250px) */

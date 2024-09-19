@@ -14,7 +14,7 @@
 <body>
 
   <div class="wraper">
-    <div class="sign-up-form-container ">
+    <div id="sign-up-form-container" class="sign-up-form-container">
       <main>
         <!-- Sign-up form start -->
         <h1>Stay updated!</h1>
@@ -25,8 +25,9 @@
           <li>And much more!</li>
         </ul>
 
-        <form>
-          <label for="email">Email address</label>
+        <form novalidate>
+          
+          <label for="email">Email address<span id="error" style="display:none">Valid email required</span></label>
           <input id="email" type="email" placeholder="email@company.com">
           <button type="submit">Subscribe to monthly newsletter</button>
         </form>
@@ -40,7 +41,7 @@
     </div>
 
     <!-- Success message start -->
-    <div class="success-message-container hide">
+    <div id="success-message-container" class="success-message-container hide">
       <section class="success-message">
         <img src="assets/images/icon-success.svg">
         <h1>Thanks for subscribing!</h1>
@@ -48,7 +49,7 @@
           A confirmation email has been sent to <span class="prominent">ash@loremcompany.com</span>.
           Please open it and click the button inside to confirm your subscription.
         </p>
-        <button>Dismiss message</button>
+        <button onclick="switchPage()">Dismiss message</button>
       </section>
     </div>
     <!-- Success message end -->
