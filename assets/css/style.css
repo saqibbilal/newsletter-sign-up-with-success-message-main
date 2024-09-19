@@ -3,42 +3,46 @@
     src: url(../fonts/Roboto-Regular.ttf);
 }
 
-body
-{
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: white;
+  }
+
+  .attribution a {
+    color: #FF6649;
+  }
+
+body {
     font-family: Roboto-Regular;
-    background-color: black;
+    background-color: hsl(235, 18%, 26%);
+    margin: 0px;
 }
 
-.wraper
-{
+.wraper {
     background-color: hsl(235, 18%, 26%);
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 98vh;
     font-size: 24px;
 }
 
-.wraper h1
-{
+.wraper h1 {
     font-size: 85px;
     font-weight: bold;
+    margin: inherit;
 }
 
-
-.sign-up-form-container
-{
+.sign-up-form-container {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: white;
-    /* width: 1440px; */
     border-radius: 20px;
-
 }
 
-main
-{
+main {
     width: 42%;
     display: flex;
     justify-content: center;
@@ -68,31 +72,155 @@ input {
 
 button {
     font-family: inherit;
-    padding: 10px 20px;
-    margin: 10px 0 10px 0;
+    padding: 20px;
+    margin: 15px 0;
     color: white;
     border-radius: 5px;
     background-color: hsl(235, 18%, 26%);
     border: none;
     cursor: pointer;
+    width: 550px;
 }
 
-.banner
-{
+.banner {
     width: 40%;
     padding: 20px;
 }
 
-.banner img
-{
+.banner img {
     width: 100%;
+    content: url("../images/illustration-sign-up-desktop.svg");
 }
 
-ul
-{
+ul {
     list-style-image: url(../images/icon-list.svg);
 }
 
 li {
     margin-bottom: 10px;
+}
+
+.hide {
+    display: none !important;
+}
+
+.success-message-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 7o0px;
+    border-radius: 20px;
+}
+
+.success-message {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 20px 30px 30px 30px;
+    margin: 10px 20px;
+    flex-direction: column;
+    width: 550px;
+}
+
+.success-message img {
+    margin: 20px 0;
+}
+
+.success-message h1 {
+    margin: auto;
+}
+
+.prominent {
+    font-weight: bold;
+}
+
+
+/** Media Queries for responsiveness **/
+/* Large devices (laptops/desktops, between 992px and 1250px) */
+@media only screen and (max-width: 1250px) {
+    .wraper {
+        font-size: 18px;
+    }
+
+    .wraper h1 {
+        margin: 15px 0;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    form {
+        width: 410px;
+    }
+
+    button {
+        width: 410px;
+    }
+
+    .banner {
+        width: inherit;
+    }
+}
+
+/* Medium devices (landscape tablets, between 768px and 992px) */
+@media only screen and (max-width: 992px) {
+    .wraper {
+        font-size: 13px;
+    }
+
+    .wraper h1 {
+        font-size: 65px;
+    }
+
+    main {
+        width: 36%;
+    }
+
+    form {
+        width: 300px;
+    }
+
+    button {
+        width: 300px;
+    }
+
+    .banner {
+        padding: 30px;
+    }
+}
+
+/* Small devices (portrait tablets and phones, 768pxpx and less) */
+@media only screen and (max-width: 768px) {
+    .sign-up-form-container {
+        flex-direction: column-reverse;
+    }
+
+    .wraper h1 {
+        font-size: 43px;
+    }
+
+    main {
+        width: 80%;
+    }
+
+    .banner {
+        width: -webkit-fill-available;
+        padding: 0px;
+    }
+
+    .banner img {
+        content: url("../images/illustration-sign-up-mobile.svg");
+    }
+
+    form {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+    }
 }

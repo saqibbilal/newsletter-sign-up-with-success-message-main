@@ -6,30 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
 
-  
-    <div class="wraper">
-
-    <div class="sign-up-form-container">
+  <div class="wraper">
+    <div class="sign-up-form-container ">
       <main>
         <!-- Sign-up form start -->
         <h1>Stay updated!</h1>
@@ -40,46 +25,42 @@
           <li>And much more!</li>
         </ul>
 
-      
-          <form>
-            <label for="email">Email address</label>
-            <input id="email" type="email" placeholder="email@company.com">
-            <button type="submit">Subscribe to monthly newsletter</button>
-          </form>
-        
-        
+        <form>
+          <label for="email">Email address</label>
+          <input id="email" type="email" placeholder="email@company.com">
+          <button type="submit">Subscribe to monthly newsletter</button>
+        </form>
+
+
         <!-- Sign-up form end -->
       </main>
       <artical class="banner">
-        <img src="assets/images/illustration-sign-up-desktop.svg">
+        <img>
       </artical>
-
     </div>
 
     <!-- Success message start -->
-    
-    
-    <!-- <div id="success-message-container">
-      <section>
-        <img>
-        <h2>Thanks for subscribing!</h2>
+    <div class="success-message-container hide">
+      <section class="success-message">
+        <img src="assets/images/icon-success.svg">
+        <h1>Thanks for subscribing!</h1>
         <p>
-          A confirmation email has been sent to ash@loremcompany.com.
+          A confirmation email has been sent to <span class="prominent">ash@loremcompany.com</span>.
           Please open it and click the button inside to confirm your subscription.
         </p>
         <button>Dismiss message</button>
       </section>
-    </div> -->
+    </div>
+    <!-- Success message end -->
 
-
-      <!-- Success message end -->
-
-
-    <!-- <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </div> -->
   </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.linkedin.com/in/saqibbilal/" target="_blank">Muhammad Saqib Bilal</a>.
+  </div>
+
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
