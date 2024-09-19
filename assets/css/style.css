@@ -1,0 +1,247 @@
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: white;
+  }
+
+  .attribution a {
+    color: #FF6649;
+  }
+
+body {
+    font-family: Roboto-Regular;
+    background-color: hsl(235, 18%, 26%);
+    margin: 0px;
+}
+
+.wraper {
+    background-color: hsl(235, 18%, 26%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 98dvh;
+    font-size: 24px;
+}
+
+.wraper h1 {
+    font-size: 85px;
+    font-weight: bold;
+    margin: inherit;
+}
+
+.sign-up-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+}
+
+main {
+    width: 42%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 90px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+}
+
+label {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+input {
+    font-family: inherit;
+    border-radius: 5px;
+    border: 1px solid hsl(231, 7%, 60%);
+    outline: none;
+    padding: 10px 20px;
+    margin: 10px 0 10px 0;
+}
+
+.email-error::placeholder {
+    color: #FF6649;
+}
+
+button {
+    font-family: inherit;
+    padding: 20px;
+    margin: 15px 0;
+    color: white;
+    border-radius: 5px;
+    background-color: hsl(235, 18%, 26%);
+    border: none;
+    cursor: pointer;
+    width: 550px;
+}
+
+button:hover {
+    background-color: hsl(4, 100%, 67%);
+    box-shadow: 0 10px 25px 0 hsl(4, 100%, 67%);
+}
+
+
+button:focus {
+    background-color: hsl(4, 86%, 56%);
+    box-shadow: 0 10px 25px 0 hsl(4, 86%, 56%);
+}
+
+#error {
+    display: block;
+    float: right;
+    color: tomato;
+    font-size: 14px;
+}
+
+.banner {
+    width: 40%;
+    padding: 20px;
+}
+
+.banner img {
+    width: 100%;
+    content: url("../images/illustration-sign-up-desktop.svg");
+}
+
+ul {
+    list-style-image: url(../images/icon-list.svg);
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.hide {
+    display: none !important;
+}
+
+.success-message-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 7o0px;
+    border-radius: 20px;
+}
+
+.success-message {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 20px 30px 30px 30px;
+    margin: 10px 20px;
+    flex-direction: column;
+    width: 550px;
+}
+
+.success-message img {
+    margin: 20px 0;
+}
+
+.success-message h1 {
+    margin: auto;
+}
+
+.prominent {
+    font-weight: bold;
+}
+
+/** Media Queries for responsiveness **/
+/* Large devices (laptops/desktops, between 992px and 1250px) */
+@media only screen and (max-width: 1250px) {
+    .wraper {
+        font-size: 18px;
+    }
+
+    .wraper h1 {
+        margin: 15px 0;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    form {
+        width: 410px;
+    }
+
+    button {
+        width: 410px;
+    }
+
+    .banner {
+        width: inherit;
+    }
+}
+
+/* Medium devices (landscape tablets, between 768px and 992px) */
+@media only screen and (max-width: 992px) {
+    .wraper {
+        font-size: 13px;
+    }
+
+    .wraper h1 {
+        font-size: 65px;
+    }
+
+    main {
+        width: 36%;
+    }
+
+    form {
+        width: 300px;
+    }
+
+    button {
+        width: 300px;
+    }
+
+    .banner {
+        padding: 30px;
+    }
+}
+
+/* Small devices (portrait tablets and phones, 768pxpx and less) */
+@media only screen and (max-width: 768px) {
+    .sign-up-form-container {
+        flex-direction: column-reverse;
+    }
+
+    .wraper h1 {
+        font-size: 43px;
+    }
+
+    main {
+        width: 80%;
+    }
+
+    .banner {
+        width: -webkit-fill-available;
+        padding: 0px;
+    }
+
+    .banner img {
+        content: url("../images/illustration-sign-up-mobile.svg");
+    }
+
+    form {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+    }
+}
