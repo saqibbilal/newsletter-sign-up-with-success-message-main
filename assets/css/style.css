@@ -82,6 +82,10 @@ button {
     width: 550px;
 }
 
+button:hover {
+    background-color: hsl(4, 100%, 67%);
+}
+
 .banner {
     width: 40%;
     padding: 20px;
